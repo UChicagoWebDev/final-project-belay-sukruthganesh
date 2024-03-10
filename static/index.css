@@ -1,0 +1,404 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 35%;
+  padding: 40px 20px 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 85%;
+}
+
+.login-title {
+  margin-bottom: 50px;
+}
+
+.login-input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.login-error-message {
+  color: red;
+  margin-bottom: 15px;
+  margin-top: -7px;
+}
+
+.login-new-user {
+  margin-top: 40px;
+}
+
+.login-img {
+  margin-left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+}
+
+.login-box {
+  padding: 0px 20px 0px 20px;
+}
+
+.landing-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 92%;
+  border-right: 1px solid #e8e8e8;
+}
+
+.landing-update-profile-button {
+  height: 40px;
+  right: 100px;
+  top: 10px;
+  font-weight: 600 !important;
+}
+
+.landing-update-channel-button {
+  height: 40px;
+  right: 233px;
+  top: 10px;
+  margin: 0px 8px 0px 8px;
+  font-weight: 600 !important;
+}
+
+.landing-title {
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-weight: 600;
+}
+
+.landing-channels-div {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-wrap: nowrap;
+  height: 38px;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+}
+
+.landing-channel-name {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.landing-active-channel {
+  background-color: #c2c2c2;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #c2c2c2;
+  }
+}
+
+.landing-logout-button {
+  height: 40px;
+  right: 15px;
+  top: 10px;
+  font-weight: 600 !important;
+}
+
+.landing-welcome-message {
+  left: 20%;
+  margin-top: 10px;
+}
+
+.landing-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+}
+
+.landing-channels {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.landing-box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.landing-box2 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  padding-top: 55px;
+}
+
+.message-reply-container {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.width-rep {
+  width: 50%;
+}
+
+.landing-create-channel {
+  margin-bottom: 20px;
+}
+
+.landing-close-channel {
+  margin-left: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.landing-belay-img {
+  margin-left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.channel-title {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.channel-message-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  width: 65px;
+  height: 45px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.channel-replies-container {
+  background-color: #7646b8;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.channel-input-field {
+  width: calc(100% - 91px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.channel-message-section {
+  width: 80%;
+  position: fixed;
+  bottom: 0;
+}
+.channel-message-section .message {
+  width: 40%;
+}
+
+.close-button-message {
+  top: 43px;
+  color: red !important;
+  font-weight: 600;
+  z-index: 1;
+  position: absolute;
+  right: 22px !important;
+}
+
+.channel-hide {
+  visibility: hidden;
+}
+.close-button {
+  top: 9px;
+  right: 22px !important;
+  position: absolute;
+  color: red !important;
+  font-weight: 600;
+}
+
+.chnl-reply {
+  color: black;
+  font-weight: 600;
+}
+
+.divider {
+  color: white;
+  margin-bottom: 100px;
+}
+
+.channel-messages {
+  margin-bottom: 100px;
+}
+
+.channel-message-container {
+  background-color: #308b53;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.channel-author {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.channel-msg {
+  margin: 0;
+  font-family: cursive;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+.replies {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+}
+
+.reply-button {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.dflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+}
+
+.center {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.default {
+  cursor: default;
+}
+
+.smileys {
+  margin-top: 8px;
+  font-size: small;
+}
+
+.smiley {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.smiley:hover {
+  border: 1px solid #5a5a5a;
+  border-radius: 30px;
+  padding: 4px;
+  font-size: 5px;
+  transform: scale(1.1);
+}
+
+.imgLink {
+  max-width: 30%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.parent.divider h4 {
+  color: black;
+}
+
+.header-class {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  margin: 10px;
+  margin-right: 15px;
+  /* float: right; */
+  position: absolute;
+  right: 5px;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.change-flow-direction {
+  flex-direction: column;
+}
